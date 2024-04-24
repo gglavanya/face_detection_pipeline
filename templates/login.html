@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        body {
+            background-color: #f0f8ff; /* Light blue background color */
+            font-style: italic; /* Set text to italic */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh; /* Make the body take up the entire viewport height */
+            margin: 0; /* Remove default margin */
+        }
+        .login-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center; /* Center the content */
+        }
+        /* Center the text and input fields inside the login container */
+        .login-container h2,
+        .login-container form {
+            text-align: left; /* Align text and form to the left */
+        }
+        .login-container input[type="submit"] {
+            display: block; /* Make the submit button a block element */
+            margin: 0 auto; /* Center the submit button horizontally */
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="/login" method="post">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <br>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>

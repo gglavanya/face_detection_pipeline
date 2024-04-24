@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Main Page</title>
+    <style>
+        body {
+            background-color: #f0f8ff; /* Light blue background color */
+            font-style: italic; /* Set text to italic */
+            display: flex;
+            
+        } 
+
+        .dashboard {
+            width: 20%; /* Set the width of the dashboard */
+            padding: 20px;
+            background-color: #f9f9f9; /* Light gray background color */
+            border-radius: 5px;
+            box-shadow: 1 4px 8px rgba(0, 0, 0, 0.1);
+            align-items: flex-start; /* Align items to the top */
+            text-align: left; /* Align text to the left */
+            justify-content: flex-start; /* Align the dashboard to the left */
+            height: 100vh; /* Make the body take up the entire viewport height */
+            margin: 0; 
+        }
+        
+        .dashboard a {
+            display: block; /* Make the links block-level elements */
+            margin-bottom: 10px; /* Add some space between links */
+            text-decoration: none; /* Remove default underline */
+            color: #333; /* Set link color */
+        }
+        .dashboard a:hover {
+            text-decoration: underline; /* Add underline on hover */
+        }
+
+        .main-container{
+            width :75%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dashboard">
+        <h3>Dashboard</h3>
+                <!-- Add links to other pages in the dashboard -->
+                <a href="/attendance">Attendance recorded</a>
+                <a href="/analysis">Analysis</a>
+                <a href="/backup">Backup attendance</a>
+    </div>
+    <div class="main-container">
+        <div class="content">
+            <h2>Welcome to the Attendance Page!</h2>
+            <!-- Add your main page content here -->
+            <p>you can get your attendance here.</p>
+        </div>
+    </div>
+   
+    
+</body>
+</html>
